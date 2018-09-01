@@ -23,9 +23,14 @@ def string_compression(in_string):
     else:
         return comp_str
 
+
 class MyTest(unittest.TestCase):
     def test_basic(self):
         self.assertEqual(string_compression("aaabb"), "a3b2")
 
     def test_1(self):
         self.assertEqual(string_compression("ab"), "a1b1")
+
+
+if __name__ == '__main__':
+    unittest.main()
